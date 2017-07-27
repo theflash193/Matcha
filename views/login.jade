@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 login
+    form(action="/login", method="post")
+        input(type="text", name="mail", placeholder="mail")
+        input(type="text", name="login", placeholder="login")
+        input(type="text", name="nom", placeholder="nom")
+        input(type="text", name="prenom", placeholder="prenom")
+        input(type="password", name="password", placeholder="mot de passe")
+        div.actions 
+           input(type="submit", value="ajoute", action="/login")
