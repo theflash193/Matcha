@@ -1,8 +1,12 @@
+import 'w3-css/w3.css';
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #0557FF;
 }
 
 a {
-  color: #00B7FF;
+  /*color: #00B7FF;*/
+  color: #0557FF;
 }
