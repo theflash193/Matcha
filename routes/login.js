@@ -6,17 +6,15 @@ var router = express.Router();
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-  res.render('signin');
+  res.render('signin/signin');
 });
 
 router.get('/signup', function(req, res, next) {
-  res.render('signup');
+  res.render('signin/signup');
 });
 
 router.post('/', function(req, res, next) {
-  console.log("post signin");
   res.redirect('/');
-  console.log("post signin");
 });
 
 module.exports = router;
