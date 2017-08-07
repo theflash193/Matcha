@@ -7,7 +7,7 @@
 6 silly lifecycle matcha@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle matcha@0.0.0~start: matcha@0.0.0
 8 verbose lifecycle matcha@0.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle matcha@0.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/grass-kw/Desktop/Matcha/node_modules/.bin:/Users/grass-kw/Desktop/Matcha/node_modules/nodemon/bin:/Users/grass-kw/Desktop/Matcha/node_modules/nodemon:/usr/local/mongodb/bin:/Users/grass-kw/Desktop/Matcha/node_modules/express-generator/bin:/Users/grass-kw/.brew/bin:/Users/grass-kw/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/munki:/usr/local/mongodb/bin:/Users/grass-kw/Desktop/Matcha/node_modules/express-generator/bin:/Users/grass-kw/.brew/bin:/Users/grass-kw/bin
+9 verbose lifecycle matcha@0.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/grass-kw/Desktop/Matcha/node_modules/.bin:/usr/local/mongodb/bin:/Users/grass-kw/Desktop/Matcha/node_modules/express-generator/bin:/Users/grass-kw/.brew/bin:/Users/grass-kw/bin:/Users/grass-kw/Desktop/Matcha/node_modules/nodemon/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/munki:/usr/local/mongodb/bin:/Users/grass-kw/Desktop/Matcha/node_modules/express-generator/bin:/Users/grass-kw/.brew/bin:/Users/grass-kw/bin:/Users/grass-kw/Desktop/Matcha/node_modules/nodemon/bin
 10 verbose lifecycle matcha@0.0.0~start: CWD: /Users/grass-kw/Desktop/Matcha
 11 silly lifecycle matcha@0.0.0~start: Args: [ '-c', 'node ./bin/www' ]
 12 silly lifecycle matcha@0.0.0~start: Returned: code: 1  signal: null
@@ -24,7 +24,7 @@
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid matcha@0.0.0
 16 verbose cwd /Users/grass-kw/Desktop/Matcha
-17 error Darwin 15.6.0
+17 error Darwin 16.6.0
 18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
 19 error node v6.10.3
 20 error npm  v3.10.10
