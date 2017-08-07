@@ -5,7 +5,7 @@ var assert = require('assert');
 var url = 'mongodb://localhost:27017/matcha';
 var database = require('../database');
 var assert = require('assert');
-
+var mail = require('../test');
 
 // mongoose.connect('mongodb://localhost/matcha');
 /* GET home page. */
@@ -25,14 +25,8 @@ router.post('/', function(req, res, next) {
       if (err) throw err
       if (result) res.redirect('/');
       else console.log("fail to connect");
-    })
-    // database.findDocuments(db, {login: req.body.login}, function(err, result) {
-    //   console.log(res);
-    //   if (err) console.log('login or password is invalid');
-    //   else res.redirect('/');
-    // })    
+    })    
   })
-  // console.log(req);
 });
 
 router.post('/signup', function(req, res, next) {
@@ -46,8 +40,10 @@ router.post('/signup', function(req, res, next) {
         mail : req.body.mail
       }],
       function() {
+
         db.close();
     })
+    mail(req.body.mail).SuccessMsg();
     console.log('log');
   })
   res.redirect('/signin');
