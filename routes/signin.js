@@ -10,6 +10,10 @@ var mail = require('../test');
 // mongoose.connect('mongodb://localhost/matcha');
 /* GET home page. */
 
+function isempty(field) {
+  return (field == "");
+}
+
 router.get('/', function(req, res, next) {
   res.render('signin/signin');
 });
@@ -31,6 +35,7 @@ router.post('/', function(req, res, next) {
 
 router.post('/signup', function(req, res, next) {
   database.MongoClient.connect(database.url, function(err, db) {
+    if (isempty(req.body.password) )
     database.insertDocuments(db, [
       {
         login : req.body.password,
@@ -40,7 +45,6 @@ router.post('/signup', function(req, res, next) {
         mail : req.body.mail
       }],
       function() {
-
         db.close();
     })
     mail(req.body.mail).SuccessMsg();
