@@ -10,7 +10,6 @@ router.get('/', function(req, res, next) {
   res.json(users);
 });
 
-
 /* Get user information */
 
 router.get('/id/:*', function(req, res, next) {

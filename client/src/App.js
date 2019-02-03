@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Connexion from './components/Connexion.js';
+import ProfilCard from './components/ProfilCard.js';
 import Inscription from './components/Inscription.js';
+import Message from './components/Message.js';
+import Comment from './components/Comment.js';
 
 class App extends Component {
   state = {users: []}
@@ -33,6 +36,9 @@ class App extends Component {
       <div className="App">
         <h1>Users</h1>
         hello
+        <Comment></Comment>
+        <Message img="https://via.placeholder.com/150" message="salut dampierre" direction="2"></Message>
+        <ProfilCard photo="https://via.placeholder.com/150" name="gordon rass kwasi"/>
         <Connexion />
         <Inscription />
       </div>
