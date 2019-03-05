@@ -8,7 +8,7 @@ class Comment extends Component {
     return (
       <form className="Comment">
         <input className="text" type="text" placeholder="Your message" name="message"/>
-        <button >Login</button>
+        <button className="button">Login</button>
       </form>
     );
   }

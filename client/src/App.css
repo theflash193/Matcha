@@ -128,7 +128,7 @@ button:hover, a:hover {
 
 .Comment {
   display: flex;
-  width: 800px;
+  width: inherit;
 }
 
 .Comment .text {
@@ -137,6 +137,7 @@ button:hover, a:hover {
 
 .Comment button {
  width: 20%;
+ background-color: rgb(58, 137, 255);
 }
 
 .ImageRounded {
@@ -145,4 +146,23 @@ button:hover, a:hover {
   width: 100%;
   margin-right: 20px;
   border-radius: 50%;
+}
+
+.chatFeedMessage {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  overflow: scroll;
+}
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.chatHeader {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
